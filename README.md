@@ -2,3 +2,4 @@
 ## contents
 - Python
 - Data science
+- machine learning(supervised- unsupervised)
