@@ -11,3 +11,14 @@ last ".").
 return "Commercial Domain". If it ends with ".edu", return "Educational Domain". 
 Otherwise, return "Other Domain".'''
 email="Amit_ml@gmail.edu"
+output1=email.count("@")
+print(output1)
+output2=email[7:]
+x=output2.count(".")
+if x >= 1 and output1==1:
+    print("valid email")
+else:
+    print("invalid email")
+print(email[0:7])
+print(email[8:13])
+print(email.endswith)
