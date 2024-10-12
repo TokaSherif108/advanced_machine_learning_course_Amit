@@ -31,7 +31,8 @@ while i<n:
 print(list)
 fname(list)'''
 while True:
-    x = input("write name")
-    if x == "end":
+    x = input("write name ")
+    if x == "":
         break
     print(x)
+import random
