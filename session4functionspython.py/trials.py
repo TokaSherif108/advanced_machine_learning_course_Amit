@@ -21,7 +21,6 @@ fprint(list)
 '''
 def fname(*x):
     print(x)
-fname(list)
 list=[]
 i=0
 n=int(input("how many names do u have ? "))
@@ -30,5 +29,4 @@ while i<=n:
     list.append(name)
     i+=1
 print(list)
-tuple(list)
-
+fname(list)
