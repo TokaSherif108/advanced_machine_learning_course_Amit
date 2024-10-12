@@ -19,7 +19,7 @@ def fprint(*x):
     print(*x)
 fprint(list)
 '''
-def fname(*x):
+'''def fname(*x):
     print(x)
 list=[]
 n=int(input("how many names do u have ? "))
@@ -29,4 +29,4 @@ while i<=n:
     list.append(name)
     i+=1
 print(list)
-fname(list)
+fname(list)'''
