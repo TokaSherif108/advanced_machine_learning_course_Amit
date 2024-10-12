@@ -19,15 +19,16 @@ def fprint(*x):
     print(*x)
 fprint(list)
 '''
+def fname(*x):
+    print(x)
+fname(list)
 list=[]
 i=0
-numofnames=int(input("how many names do u have ? "))
-while i<numofnames:
+n=int(input("how many names do u have ? "))
+while i<=n:
     name=input("enter name")
     list.append(name)
     i+=1
 print(list)
 tuple(list)
-def fname(*x):
-    print(x)
-fname(list)
+
