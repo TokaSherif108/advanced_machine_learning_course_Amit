@@ -1,6 +1,6 @@
-def function1(x,y):
+"""def function1(x,y):
     print(f"first number ={x},second number={y}")
-function1(5,6)
+function1(5,6)"""
 
 #we cant give default argument to the first one either both or the last one only 
 '''
@@ -31,7 +31,7 @@ while i<n:
 print(list)
 fname(list)'''
 while True:
-    x = input()
+    x = input("write name")
     if x == "":
         continue
     print(x)
