@@ -21,3 +21,11 @@ fprint(list)
 '''
 list=[]
 i=0
+numofnames=int(input("how many names do u have ? "))
+while i<numofnames:
+    name=input("enter name")
+    list.append(name)
+    i+=1
+def fname(*x):
+    print(x)
+fname(list)
