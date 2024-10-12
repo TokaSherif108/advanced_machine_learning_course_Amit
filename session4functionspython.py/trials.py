@@ -22,8 +22,8 @@ fprint(list)
 def fname(*x):
     print(x)
 list=[]
-i=0
 n=int(input("how many names do u have ? "))
+i=0
 while i<=n:
     name=input("enter name")
     list.append(name)
