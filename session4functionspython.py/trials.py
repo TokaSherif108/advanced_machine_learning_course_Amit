@@ -32,4 +32,6 @@ print(list)
 fname(list)'''
 while True:
     x = input("write name")
+    if x == "":
+        break
     print(x)
