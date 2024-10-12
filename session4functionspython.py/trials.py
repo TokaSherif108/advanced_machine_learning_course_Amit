@@ -26,6 +26,8 @@ while i<numofnames:
     name=input("enter name")
     list.append(name)
     i+=1
+print(list)
+tuple(list)
 def fname(*x):
     print(x)
 fname(list)
