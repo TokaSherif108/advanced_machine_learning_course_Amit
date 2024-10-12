@@ -20,12 +20,4 @@ def fprint(*x):
 fprint(list)
 '''
 list=[]
-numofname=int(input("please enter how many name do u have ? "))
 i=0
-while i<=numofname:
-    name=input("write name ")
-    list.append(name)
-    i+=1
-def fname(*x):
-    print(*x)
-fname(list)
