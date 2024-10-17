@@ -7,14 +7,14 @@ def fun(x):
         return x
     print( x + fun(x-1))
 fun(5)'''
-'''def sum(x,y):
+def sum(x,y):
     print (x+y)
 def subs(x,y):
     print(x-y)
 def mult(x,y):
     print(x*y)
 def div(x,y):
-    print(x/y)'''
+    print(x/y)
 
 list=["addition","substraction","multiplication","division","exit"]
 
