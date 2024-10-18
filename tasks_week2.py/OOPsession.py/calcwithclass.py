@@ -1,17 +1,16 @@
 class calculator:
-    def __init__(self,n1,n2) -> None:
-        pass
+    def __init__(self,n1,n2):
         self.n1=n1
         self.n2=n2
-    def sum(n1,n2):
-        return n1+n2
-    def subs(n1,n2):
-        return n1-n2
-    def mult(n1,n2):
-        return n1*n2
-    def div(n1,n2):
-        return n1/n2
-    def power(n1,n2):
-        return n1**n2
-c1=calculator()
-print(c1.power(2,4))
+    def sum(self):
+        return self.n1+self.n2
+    def subs(self):
+        return self.n1-self.n2
+    def mult(self):
+        return self.n1*self.n2
+    def div(self):
+        return self.n1/self.n2
+    def power(self):
+        return self.n1**self.n2
+c1=calculator(5,2)
+print(c1.power())
