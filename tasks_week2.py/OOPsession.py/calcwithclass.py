@@ -7,4 +7,11 @@ class calculator:
         return n1+n2
     def subs(n1,n2):
         return n1-n2
-    def 
+    def mult(n1,n2):
+        return n1*n2
+    def div(n1,n2):
+        return n1/n2
+    def power(n1,n2):
+        return n1**n2
+c1=calculator()
+print(c1.power(2,4))
