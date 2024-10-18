@@ -9,10 +9,10 @@ class student():
     #def student_info(x):
     def student_info(self):
         print("hello ")
-        print(f"student name: {student_name}") 
+        '''print(f"student name: {student_name}") 
         print(f"student age: {student_age}")
         print(f"student GPA : {student_GPA}")
-        print(f"student gender : {student_gender}")
+        print(f"student gender : {student_gender}")'''
 #instance
 s1=student()
 #edit attribute
