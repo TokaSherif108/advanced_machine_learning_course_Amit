@@ -1,12 +1,13 @@
 #open file and count the number 
 
-input_file="C:/Users/toka_/Desktop/AMIT/advanced_machine_learning_course_Amit/workshoppython.py/test.txt"
+input_file=r"C:/Users/toka_/Desktop/AMIT/advanced_machine_learning_course_Amit/workshoppython.py/test.txt"
 def file_read(input_file):
-    #input_file = open("input_file.txt", "r")
+    input_file = open(input_file, "r")
     text = input_file.read()
     input_file.close()
     text = text.replace('\n', ' ')
-    words = text.split(' ')
+    words = text.split()
+    print(words)
     unique_words = set(words)
     word_counts = {word: 0 for word in unique_words}
     for i in unique_words:
