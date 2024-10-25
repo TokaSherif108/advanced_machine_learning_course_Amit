@@ -34,3 +34,20 @@ while True:
     if quantity_required > product["Quantity"]:
         print("Insufficient quantity. Please enter a new quantity.")
         continue
+    # 5% discount for every 250 quantity (CALCULATIONS)
+    discount_quantity = quantity_required // 250
+    discount_percentage = 5.0 * discount_quantity
+    total_discount = min(discount_percentage, 25.0)  # Cap the discount at 25%
+    discounted_price = quantity_required * product["Price"] * (1 - total_discount / 100)
+
+    # Updated list after purchase
+    product["Quantity"] -= quantity_required
+
+    # total of the Added discounted price
+    total_discounted_price = total_discount_price + discounted_price
+
+    print(f"Discounted Price: ${discounted_price:.2f}")
+
+    another_item = input("Do you want to add another item? (yes/no): ")
+    if another_item.lower() != 'yes':
+        break

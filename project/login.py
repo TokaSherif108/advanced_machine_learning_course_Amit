@@ -1,8 +1,8 @@
 import random
 from prettytable import PrettyTable
+u="Toka"
+p='123'
 def ver_code(u,p):
-    u="Toka"
-    p=123
     while True:
         x=input(" Enter Name : ")
         if x==u:
@@ -14,13 +14,12 @@ def ver_code(u,p):
                     l=int(input(" Enter your verification code : "))
                     if l==s:
                         print(" Welcome ")
-                        continue
+                        break
                     else:
-                        print("Incorrect Verification Code. Try again.")
-                        continue
+                        print("Incorrect Verification Code. Try again")       
+                break
             else:
                 print(" In correct password ")
-                continue
         else:
-            print(" In correct username ")         
+            print(" In correct username ")        
 
