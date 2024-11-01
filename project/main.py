@@ -1,6 +1,6 @@
-# from trial import login_user
+from trial import login_user
 from function_total_discountprice import total_discount_price
-# login_user("Dimes",'1111')
+login_user("Dimes",'1111')
 from prettytable import PrettyTable
 products=[
     {"Name": "water", "Price": 80.0, "Quantity": 1200},

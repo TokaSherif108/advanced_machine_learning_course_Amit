@@ -20,7 +20,7 @@ def login_user(u,p):
 
                     if l == s:
                         print("Welcome")
-                        break
+                        
                     else:
                         print("Incorrect Verification Code. Try again.")
 
