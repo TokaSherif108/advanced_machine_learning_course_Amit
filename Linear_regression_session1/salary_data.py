@@ -22,6 +22,7 @@ x=data.iloc[:,:-1]
 y=data.iloc[:,1]
 #random state bsbtha 3shan kol mara b2sm data ya5od nfs 7aga k train w k test 
 x_train,x_test,y_train,y_test=train_test_split(x,y,train_size=0.8,random_state=10)
+#rsmt el model w b3dha ha5od b2a coeff w intercept 
 my_model=LinearRegression()
 my_model.fit(x_train,y_train)
 plt.scatter(x_train, y_train, color = 'red')
@@ -31,3 +32,13 @@ plt.title('Salary vs Experience (Training set)')
 plt.xlabel('Years of Experience')
 plt.ylabel('Salary')
 plt.show()
+y_pred = my_model.predict(x_test)
+c = [i for i in range(1,len(y_test)+1)]
+plt.plot(c,y_test,color='r',linestyle='-')
+plt.plot(c,y_pred,color='b',linestyle='-')
+plt.xlabel('Salary')
+plt.ylabel('index')
+plt.title('Prediction')
+plt.show()
+print('Intercept of the model:',my_model.intercept_)
+print('Coefficient of the line:',my_model.coef_)
