@@ -45,3 +45,4 @@ plt.legend()
 plt.tight_layout()
 plt.show()
 print(f"optimized parameters : w = {w} , b = {b} ")
+
